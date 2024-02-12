@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio Website</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="header">
+			<nav>
+				<div class="left">Suhani's Portfolio</div>
+				<div class="right">
+					<ul id="sidemenu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact Me</a></li>
+						<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+					</ul>
+				</div>
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+			</nav>
+		</div>
+		<main>
+			<section class="firstSection">
+				<div class="leftSection">
+					Hello, I am
+					<div>
+						<span class="purple">Suhani Nilesh Shroff!</span>
+					</div>
+					<div>I am a passionate</div>
+					<span id="element"></span>
+				</div>
+				<div class="rightSection"></div>
+			</section>
+		</main>
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-one">
+						<img src="./Images/about.jpeg" />
+					</div>
+					<div class="about-col-two">
+						<h1 class="sub-title">About Me</h1>
+						<p>
+							I am
+							<span>Suhani Nilesh Shroff.</span>
+							I am a <span class="fs">Full Stack Web Developer</span>
+						</p>
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="openTab('skills')">
+								Skills
+							</p>
+							<p class="tab-links" onclick="openTab('development')">
+								Development
+							</p>
+							<p class="tab-links" onclick="openTab('education')">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li>
+									<span> Full Stack Web Development </span><br />Made major
+									project using frontend and backend Development
+								</li>
+								<li>
+									<span> Front End Development</span><br />Developed Simon Says
+									game using HTML, CSS and JavaScript
+								</li>
+								<li><span> Java </span><br />Made a Calculator</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="development">
+							<ul>
+								<li><span> Major Project </span><br />Developed Website</li>
+								<li>
+									<span>Simon Says Game</span><br />Developed using frontend
+								</li>
+								<li>
+									<span> Java </span><br />Developed stone, paper and scissor
+									game
+								</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li>
+									<span>2025</span><br />BE from Sipna College of Engineering
+									and Technology Amravati
+								</li>
+								<li>
+									<span>2021</span><br />HSC from Brijlal Biyani Science College
+									Amravati
+								</li>
+								<li>
+									<span>2019</span><br />SSC from Holy Cross Convent English
+									High School Amravati
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="services">
+			<div class="container">
+				<h1 class="sub-title">My Services</h1>
+				<div class="services-list">
+					<div>
+						<i class="fa-solid fa-code"></i>
+						<h2>Web Development</h2>
+						<p>
+							Web development is the work involved in developing a website for
+							the Internet (World Wide Web) or an intranet (a private network).
+							Web development can range from developing a simple single static
+							page of plain text to complex web applications, electronic
+							businesses, and social network services.
+						</p>
+						<a href="#">Learn more</a>
+					</div>
+					<div>
+						<i class="fa-brands fa-java"></i>
+						<h2>Java Programmer</h2>
+						<p>
+							Developed first in 1995 by Sun Microsystems, Java is a concurrent,
+							class-based, and object-oriented programming language based on the
+							syntax of C and C++. Java is fast, secure, and extremely
+							versatile. Thus, it's preferred to develop applications like
+							software design, gaming technology, and web and mobile
+							applications.
+						</p>
+						<a href="#">Learn more</a>
+					</div>
+					<div>
+						<i class="fa-brands fa-app-store"></i>
+						<h2>Frontend Development</h2>
+						<p>
+							Front-end development is the process of building components that
+							interact with users. Examples are the user interface, buttons,
+							user-entered data, websites, and user experience (UX) features.
+						</p>
+						<a href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="projects">
+			<div class="container">
+				<h1 class="sub-title">My Work</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="./Images/work-1.png" />
+						<div class="layer">
+							<h3>Online Game</h3>
+							<p>Simon Says is a memory game for two or more people players.</p>
+							<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="./Images/work-2.png" />
+						<div class="layer">
+							<h3>Music App</h3>
+							<p>
+								Spotify is a digital music, podcast, and video service that
+								gives you access to millions of songs.
+							</p>
+							<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="./Images/work-3.png" />
+						<div class="layer">
+							<h3>Online Shopping App</h3>
+							<p>
+								Amazon.com, Inc. is focusing on e-commerce, cloud computing and
+								artificial intelligence.
+							</p>
+							<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn">See more</a>
+			</div>
+		</div>
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p><i class="fa-solid fa-envelope"></i>suhanishroff03@gmail.com</p>
+						<p><i class="fa-solid fa-square-phone"></i>9421865541</p>
+						<div class="social-icons">
+							<a
+								href="https://www.linkedin.com/in/suhani-shroff-281004259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+								><i class="fa-brands fa-linkedin"></i
+							></a>
+							<a href="https://github.com/Suhani-22-Shroff"
+								><i class="fa-brands fa-github"></i
+							></a>
+							<a
+								href="https://www.instagram.com/suhani_shroff.2209?igsh=dXo1dzk5djUyZHoz"
+								><i class="fa-brands fa-instagram"></i
+							></a>
+						</div>
+						<a href="./Images/Resume_Updated.docx" download class="btn btn2"
+							>Download Resume</a
+						>
+					</div>
+					<div class="contact-right">
+						<form name="submit-to-google-sheet">
+							<input type="text" name="Name" placeholder="Name" required />
+							<input type="email" name="Email" placeholder="Email" required />
+							<textarea
+								name="Message"
+								rows="6"
+								placeholder="Message"
+							></textarea>
+							<button type="submit" class="btn btn2">Submit</button>
+						</form>
+						<span id="msg"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>&#169;&#65039; Suhani Shroff</p>
+			<p>Made with &#10084;&#65039; by me</p>
+		</div>
+
+		<script src="app.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/svg-with-js.min.css"
+		/>
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+		<script>
+			var typed = new Typed("#element", {
+				strings: ["Programmer", "Full Stack Web Developer"],
+				typeSpeed: 50,
+			});
+		</script>
+	</body>
+</html>
